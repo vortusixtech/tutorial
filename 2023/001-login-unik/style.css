@@ -1,0 +1,59 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    height: 100%;
+    background-image: url('img/background.jpg');
+}
+
+img {
+    width: 70%;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .hover-area {
+    position: absolute;
+    border-radius: 25rem 25rem 0 0;
+}
+
+.login .hover {
+    position: relative;
+}
+
+.login a {
+    position: absolute;
+}
+
+.login:hover .hover-area {
+    width: 25rem;
+    height: 15rem;
+    transform: translateX(-10rem) translateY(-10rem);
+    /* border: red solid; */ /* untuk men-debug area hover */
+}
+
+.login .icon {
+    width: 5rem;
+    height: 5rem;
+    transition: all 0.5s ease-out;
+    border-radius: 100%;
+    background-color: #111;
+}
+
+.login .icon:hover,
+.login:hover .hover {
+    background-color: #333;
+}
+
+.login:hover .item-0 { transform: rotateZ(-90deg) translateY(-8rem) rotateZ( 90deg); } /* Kiri */
+.login:hover .item-1 { transform: rotateZ(-45deg) translateY(-8rem) rotateZ( 45deg); } /* Kiri Atas */
+.login:hover .item-2 { transform: rotateZ(  0deg) translateY(-8rem) rotateZ(  0deg); } /* Atas */
+.login:hover .item-3 { transform: rotateZ( 45deg) translateY(-8rem) rotateZ(-45deg); } /* Kanan Atas */
+.login:hover .item-4 { transform: rotateZ( 90deg) translateY(-8rem) rotateZ(-90deg); } /* Kanan */
