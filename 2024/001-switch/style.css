@@ -1,0 +1,31 @@
+.button {
+  width: 200px;
+  height: 100px;
+  background-color: lightgray;
+  border: 0;
+  border-radius: 9999px;
+  transition: 250ms;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+}
+
+.button[aria-checked="true"] {
+  background-color: lightblue;
+}
+
+.thumb {
+  max-width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.thumb-spacer {
+  transition: 250ms;
+}
+
+.button[aria-checked="true"] .thumb-spacer {
+  flex: 1;
+}
